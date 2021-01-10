@@ -10,7 +10,7 @@ const SoundChooser = () => {
       <button
         onClick={() => {
           setSound('horns');
-          history.push('/player');
+          history.push('/');
         }}
       >
         Horns
@@ -18,7 +18,7 @@ const SoundChooser = () => {
       <button
         onClick={() => {
           setSound('bears');
-          history.push('/player');
+          history.push('/');
         }}
       >
         Bears
@@ -26,7 +26,7 @@ const SoundChooser = () => {
       <button
         onClick={() => {
           setSound('cats');
-          history.push('/player');
+          history.push('/');
         }}
       >
         Cats

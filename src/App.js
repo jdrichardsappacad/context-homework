@@ -3,8 +3,8 @@ import Player from './components/Player';
 import SoundChooser from './components/SoundChooser';
 function App() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'row' }}>
-      <div style={{ width: '25%', paddingTop: '100px' }}>
+    <div className='container'>
+      <div className='left'>
         <ul>
           <li>
             <NavLink to='/sounds'>Choose Sounds</NavLink>
@@ -14,8 +14,14 @@ function App() {
           </li>
         </ul>
       </div>
-      <div style={{ width: '75%', display: 'flex', justifyContent: 'center' }}>
+      <div className='right'>
         <Switch>
+          <Route exact path='/'>
+            <h1 style={{ width: '50%', marginTop: '100px' }}>
+              Welcome Choose Your Type of Sound Effect and Play Them Using the
+              Choices Given
+            </h1>
+          </Route>
           <Route path='/sounds'>
             <SoundChooser />
           </Route>

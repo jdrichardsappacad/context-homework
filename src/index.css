@@ -1,8 +1,27 @@
 /* TODO Add site wide styles */
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 25%;
+  padding-top: 100px;
+}
+
+.right {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+
 button {
-  width: 60px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100px;
   height: 40px;
-  background-color: greenyellow;
+  background-color: rgb(217, 228, 199);
   color: darkblue;
   border-radius: 10px;
   margin: 100px 10px 0 10px;
