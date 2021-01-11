@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 import { SoundContext } from '../../Context/SoundContext';
-// import ContextSound from '../ContextSound';
 
 function Player() {
   const sounds = useContext(SoundContext);
