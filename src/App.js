@@ -7,6 +7,9 @@ function App() {
       <div className='left'>
         <ul>
           <li>
+            <NavLink to='/'>Home</NavLink>
+          </li>
+          <li>
             <NavLink to='/sounds'>Choose Sounds</NavLink>
           </li>
           <li>
@@ -17,10 +20,16 @@ function App() {
       <div className='right'>
         <Switch>
           <Route exact path='/'>
-            <h1>
-              Welcome Choose Your Type of Sound Effect and Play Them Using the
-              Choices Given
-            </h1>
+            <h3>
+              SOUNDPLAYER
+              <br />
+              <br />
+              1. Click 'Choose Sounds' to choose the type of sound you want.
+              <br />
+              <br />
+              2. Click Player Sounds to play the sounds you have chosen and want
+              to hear.
+            </h3>
           </Route>
           <Route path='/sounds'>
             <SoundChooser />
