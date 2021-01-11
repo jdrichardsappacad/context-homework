@@ -5,13 +5,19 @@ import App from './App';
 import SoundProvider from './Context/SoundContext';
 import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
+const Root = () => {
+  return (
     <BrowserRouter>
       <SoundProvider>
         <App />
       </SoundProvider>
     </BrowserRouter>
+  );
+};
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Root />
   </React.StrictMode>,
   document.getElementById('root')
 );

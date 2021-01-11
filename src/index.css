@@ -1,13 +1,26 @@
 /* TODO Add site wide styles */
 
+*,
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .container {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
+  border: 5px solid gray;
+  border-radius: 10px;
+  width: 75%;
+  height: 500px;
 }
 
 .left {
+  margin: 0;
   width: 25%;
   padding-top: 100px;
+  background: skyblue;
+  border-radius: 5px 0 0 5px;
 }
 
 .right {
@@ -16,15 +29,42 @@
   justify-content: center;
 }
 
+a {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: gray;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  width: 50%;
+  margin-top: 100px;
+}
+
 button {
   font-weight: bold;
   font-size: 1.5rem;
   width: 100px;
   height: 40px;
-  background-color: rgb(217, 228, 199);
-  color: darkblue;
+  background-color: #fff;
+  color: skyblue;
+
   border-radius: 10px;
-  margin: 100px 10px 0 10px;
+  margin: 0 10px;
+}
+
+button:hover {
+  color: white;
+  background-color: skyblue;
 }
 
 .sound-form {
