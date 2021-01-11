@@ -17,7 +17,7 @@ function App() {
       <div className='right'>
         <Switch>
           <Route exact path='/'>
-            <h1 style={{ width: '50%', marginTop: '100px' }}>
+            <h1>
               Welcome Choose Your Type of Sound Effect and Play Them Using the
               Choices Given
             </h1>
